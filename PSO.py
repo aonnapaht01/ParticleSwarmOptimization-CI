@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Load and preprocess data
 data = pd.read_excel("AirQualityUCI.xlsx", na_values=-200).dropna()
-features = data.iloc[:, [2, 6, 8, 10, 11, 12, 13, 14]].values
+features = data.iloc[:, [3, 6, 8, 10, 11, 12, 13, 14]].values
 targets = data.iloc[:, 5].values
 
 # Normalize the features
